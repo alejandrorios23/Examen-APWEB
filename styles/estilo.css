@@ -1,0 +1,178 @@
+/* Página de estilo  */
+
+/* Estilo palabras */
+
+@font-face {
+    font-family: titulo;
+    src: url(../fonts/LazenbyCompLiquid.ttf);
+}
+
+@font-face {
+    font-family:texto;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+
+/*  Estilo introduction */
+
+body {background-color: black;
+    margin: 0;
+    padding: 0;}
+    
+
+html {scroll-behavior: smooth;}
+
+#container {width: 80%;
+            margin: auto;}
+
+/*body {background-color: black;}*/
+
+
+
+
+/* Estilo nav*/
+
+
+nav {position: sticky;
+    top:0;
+    z-index: 99;
+    
+    }
+
+
+.topnav{overflow: hidden;
+        background-color: rgb(78, 76, 76);
+        font-family: titulo;}
+
+
+.topnav a {float: left;
+            display: block;
+            color: rgb(26, 212, 212);
+            font-size: 1.5em;
+            text-align: center;
+            padding: 14px 14px;}
+
+@media screen and {max-width: 600px){
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+    float: right;
+    display: block;
+    }
+}
+    
+}
+
+@media screen and  {
+    
+}
+            
+
+/* Estilo Hero  */
+
+
+#Hero {background-image: url(../images/hero.jpg);
+        background-size: cover;
+        background-position:center;
+        height: 15%;
+        
+}
+
+
+
+#Hero h1 {position: absolute;
+            bottom:50px;
+            left: 40px;
+            color:rgb(26, 212, 212) ;
+            font-family: titulo;
+            border-radius: 10px solid yellow;}
+
+
+
+/* Estilo de la Introducion */
+
+#introduction {color: rgb(26, 212, 212);
+                text-align: justify;
+                font-size: 1em;
+                }
+
+#introduction h1 {text-align: center;
+                    font-family:titulo;
+                    font-size: 2em;}
+
+#introduction p {font-family: texto;}
+
+#introduction p:first-letter{font-size:1.5m;
+                            color: yellow;}
+
+#CPU {width: 37%;
+    float: right;
+    margin: 20px;}
+
+/** Estilo Prototypes */
+
+#prototypes {font-family:texto;
+            font-size: 1.5;
+            color: rgb(26, 212, 212);}
+
+#prototypes h1 {text-align: center;
+                color:rgb(26, 212, 212) ;
+                font-size: 2em;
+                font-family: titulo;
+                }
+
+#prototype h2 {font-family: titulo;}
+
+
+
+
+/* Gallery */
+
+.tercios {width: 33.33;
+        float:left;
+        box-sizing: border-box;
+        padding: 3%;
+        border: 2px solid yellow;}
+
+.tercios img {width: 100%;}
+
+.tercios h2 {color: rgb(26, 212, 212) ;
+                font-family: titulo;
+                text-align: center;}
+
+.mitad {width: 50%;
+        float: right;
+        box-sizing: border-box;}
+
+
+/* Footer */
+
+footer {background-color: black;
+        color: white;
+        border: 3px  solid yellow;}
+
+footer p {color: rgb(26, 212, 212);
+        text-align: center;}
+
+
+
+/* El media Only */
+@media only screen and (max-width:1000px){
+    #CPU, .mitad {width: 100%;}
+    #CPU {margin: 0;}
+    .tercios {width: 50%;
+                margin: 5%;}
+    #CPU {width: 90%;}
+}
+
+
+
+
+
+
+@media only screen and (max-width:500px){
+    #container {width: 100%;}
+    .tercios {width: 90%;
+                margin: 5%;}
+    #CPU {width: 90%;}
+}
+    
